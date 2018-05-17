@@ -1,0 +1,15 @@
+﻿@model IEnumerable<XMLanalysis.OpenData.FarmTran>
+@{
+    ViewBag.Title = "About";
+}
+
+<h2>About</h2>
+@foreach (var item in Model)
+{
+    <h1>
+        <a href="@item.cropCode">
+            @item.cropCode
+        </a>
+    </h1>
+}
+
