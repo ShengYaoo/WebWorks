@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using mLibrary.Database;
+using mLibrary.OpenData;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using XMLanalysis.Database;
-
 namespace WebWork.Controllers
 {
     public class FarmTranController : Controller
@@ -25,7 +22,7 @@ namespace WebWork.Controllers
             return View(model);
         }
         [HttpPost]
-        public ActionResult Edit(string id, XMLanalysis.OpenData.FarmTran input)
+        public ActionResult Edit(string id,FarmTran input)
         {
             var model = db.FarmTrans.Find(id);
 

@@ -157,14 +157,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\CnToEn.xml" />
     <Content Include="App_Data\FarmTransData.xml" />
     <Content Include="App_Data\OpenData.mdf" />
     <Content Include="App_Data\OpenData_log.ldf">
       <DependentUpon>OpenData.mdf</DependentUpon>
     </Content>
-    <Content Include="App_Data\PharmaceuticalFactory.xml" />
-    <Content Include="App_Data\Pharmacy_03.xml" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -223,9 +220,9 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\XmlAnalysisTeamWork\XMLanalysis\XMLanalysis.csproj">
-      <Project>{6687bcd2-be9d-435f-aacf-66d529bd7979}</Project>
-      <Name>XMLanalysis</Name>
+    <ProjectReference Include="..\mLibrary\mLibrary.csproj">
+      <Project>{acb47e3b-ffdf-4773-9535-168baaadf382}</Project>
+      <Name>mLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

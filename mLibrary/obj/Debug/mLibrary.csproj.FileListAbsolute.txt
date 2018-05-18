@@ -1,0 +1,11 @@
+C:\Users\user\source\repos\WebWorks\mLibrary\bin\Debug\mLibrary.dll.config
+C:\Users\user\source\repos\WebWorks\mLibrary\bin\Debug\mLibrary.dll
+C:\Users\user\source\repos\WebWorks\mLibrary\bin\Debug\mLibrary.pdb
+C:\Users\user\source\repos\WebWorks\mLibrary\bin\Debug\EntityFramework.dll
+C:\Users\user\source\repos\WebWorks\mLibrary\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\source\repos\WebWorks\mLibrary\bin\Debug\EntityFramework.xml
+C:\Users\user\source\repos\WebWorks\mLibrary\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\source\repos\WebWorks\mLibrary\obj\Debug\mLibrary.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\WebWorks\mLibrary\obj\Debug\mLibrary.csproj.CopyComplete
+C:\Users\user\source\repos\WebWorks\mLibrary\obj\Debug\mLibrary.dll
+C:\Users\user\source\repos\WebWorks\mLibrary\obj\Debug\mLibrary.pdb
