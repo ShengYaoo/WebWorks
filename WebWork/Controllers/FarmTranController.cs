@@ -8,12 +8,25 @@ namespace WebWork.Controllers
     {
         // GET: FarmTran
         mDbContext db = new mDbContext();
-        public ActionResult Index()
+
+        public ActionResult Index(int Id = 0)
         {
 
             var models = db.FarmTrans
                 .ToList();
-            return View(models);
+            var mdl2 = models.GetRange(Id*10, 10);
+
+            return View(mdl2);
+        }
+
+        public ActionResult FilteredIndex(int Id = 0)
+        {
+
+            var models = db.FarmTrans
+                .ToList();
+            var mdl2 = models.GetRange(Id, 10);
+
+            return View(mdl2);
         }
         [HttpGet]
         public ActionResult Edit(int Id)
