@@ -85,3 +85,11 @@
 }
 
 </table>
+
+<p>
+
+    @Html.ActionLink("<<", "Index", new { id = Math.Max(0, ViewBag.page - 5) })
+    @Html.ActionLink("<", "Index", new { id = Math.Max(0, ViewBag.page - 1) })
+    @Html.ActionLink(">", "Index", new { id = ViewBag.page + 1 })
+    @Html.ActionLink(">>", "Index", new { id = ViewBag.page + 5 })
+</p>

@@ -15,7 +15,7 @@ namespace WebWork.Controllers
             var models = db.FarmTrans
                 .ToList();
             var mdl2 = models.GetRange(Id*10, 10);
-
+            ViewBag.page = Id;
             return View(mdl2);
         }
 
@@ -25,7 +25,7 @@ namespace WebWork.Controllers
             var models = db.FarmTrans
                 .ToList();
             var mdl2 = models.GetRange(Id, 10);
-
+            ViewBag.page = Id;
             return View(mdl2);
         }
         [HttpGet]
