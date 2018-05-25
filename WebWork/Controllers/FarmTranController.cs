@@ -16,15 +16,15 @@ namespace WebWork.Controllers
             return View(models);
         }
         [HttpGet]
-        public ActionResult Edit(string id)
+        public ActionResult Edit(int Id)
         {
-            var model = db.FarmTrans.Find(id);
+            var model = db.FarmTrans.Find(Id);
             return View(model);
         }
         [HttpPost]
-        public ActionResult Edit(string id,FarmTran input)
+        public ActionResult Edit(int Id, FarmTran input)
         {
-            var model = db.FarmTrans.Find(id);
+            var model = db.FarmTrans.Find(Id);
 
             model.marketCode = input.marketCode;
             model.marketName = input.marketName;
@@ -37,19 +37,17 @@ namespace WebWork.Controllers
         }
 
         [HttpGet]
-        public ActionResult Delete(string id)
+        public ActionResult goDelete(int Id)
         {
-            var model = db.FarmTrans.Find(id);
-            //db.OpenDatas.Remove(model);
-            //db.SaveChanges();
+            var model = db.FarmTrans.Find(Id);
             return View(model);
 
         }
         [HttpPost]
         [ActionName("Delete")]
-        public ActionResult DoDelete(string id)
+        public ActionResult Delete(int Id)
         {
-            var model = db.FarmTrans.Find(id);
+            var model = db.FarmTrans.Find(Id);
             db.FarmTrans.Remove(model);
             db.SaveChanges();
             return RedirectToAction("Index");

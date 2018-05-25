@@ -1,0 +1,104 @@
+﻿@model mLibrary.OpenData.FarmTran
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>FarmTran</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.transactionDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.transactionDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cropCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cropCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cropName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cropName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.marketCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.marketCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.marketName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.marketName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.priceHigh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.priceHigh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.priceMid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.priceMid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.priceLow)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.priceLow)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.priceAvg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.priceAvg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.transactionNum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.transactionNum)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

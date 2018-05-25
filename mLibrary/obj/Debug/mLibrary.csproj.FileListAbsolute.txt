@@ -9,3 +9,4 @@ C:\Users\user\source\repos\WebWorks\mLibrary\obj\Debug\mLibrary.csproj.CoreCompi
 C:\Users\user\source\repos\WebWorks\mLibrary\obj\Debug\mLibrary.csproj.CopyComplete
 C:\Users\user\source\repos\WebWorks\mLibrary\obj\Debug\mLibrary.dll
 C:\Users\user\source\repos\WebWorks\mLibrary\obj\Debug\mLibrary.pdb
+C:\Users\user\Source\Repos\WebWorks\mLibrary\obj\Debug\mLibrary.csprojResolveAssemblyReference.cache
