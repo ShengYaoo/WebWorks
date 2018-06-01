@@ -12,8 +12,8 @@ namespace mLibrary.Database
     {
         static mDbContext()
         {
-            DbInit dbinit = new DbInit();
-            System.Data.Entity.Database.SetInitializer(dbinit);
+            //DbInit dbinit = new DbInit();
+            //System.Data.Entity.Database.SetInitializer(dbinit);
         }
         public mDbContext() : base("FarmTran")
         {

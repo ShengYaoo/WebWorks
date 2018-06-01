@@ -3,6 +3,12 @@
 @{
     ViewBag.Title = "Index";
 }
+@section scripts{
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="dist/js/pages/dashboard.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="dist/js/demo.js"></script>
+}
 
 <h2>Index</h2>
 
@@ -44,44 +50,45 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.transactionDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.cropCode)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.cropName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.marketCode)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.marketName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.priceHigh)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.priceMid)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.priceLow)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.priceAvg)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.transactionNum)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.transactionDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cropCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cropName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.marketCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.marketName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.priceHigh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.priceMid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.priceLow)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.priceAvg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.transactionNum)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
 
 </table>
