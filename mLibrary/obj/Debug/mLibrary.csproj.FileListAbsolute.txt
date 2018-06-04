@@ -10,3 +10,15 @@ C:\Users\user\source\repos\WebWorks\mLibrary\obj\Debug\mLibrary.csproj.CopyCompl
 C:\Users\user\source\repos\WebWorks\mLibrary\obj\Debug\mLibrary.dll
 C:\Users\user\source\repos\WebWorks\mLibrary\obj\Debug\mLibrary.pdb
 C:\Users\user\Source\Repos\WebWorks\mLibrary\obj\Debug\mLibrary.csprojResolveAssemblyReference.cache
+E:\C#WebWorks\mLibrary\bin\Debug\mLibrary.dll.config
+E:\C#WebWorks\mLibrary\bin\Debug\mLibrary.dll
+E:\C#WebWorks\mLibrary\bin\Debug\mLibrary.pdb
+E:\C#WebWorks\mLibrary\bin\Debug\EntityFramework.dll
+E:\C#WebWorks\mLibrary\bin\Debug\EntityFramework.SqlServer.dll
+E:\C#WebWorks\mLibrary\bin\Debug\EntityFramework.xml
+E:\C#WebWorks\mLibrary\bin\Debug\EntityFramework.SqlServer.xml
+E:\C#WebWorks\mLibrary\obj\Debug\mLibrary.csprojResolveAssemblyReference.cache
+E:\C#WebWorks\mLibrary\obj\Debug\mLibrary.csproj.CoreCompileInputs.cache
+E:\C#WebWorks\mLibrary\obj\Debug\mLibrary.csproj.CopyComplete
+E:\C#WebWorks\mLibrary\obj\Debug\mLibrary.dll
+E:\C#WebWorks\mLibrary\obj\Debug\mLibrary.pdb
