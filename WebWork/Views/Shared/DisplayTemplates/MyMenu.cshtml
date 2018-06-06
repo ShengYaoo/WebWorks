@@ -1,0 +1,12 @@
+﻿@model MvcSiteMapProvider.Web.Html.Models.MenuHelperModel
+@using System.Web.Mvc.Html
+@using MvcSiteMapProvider.Web.Html.Models
+
+<ul  data-widget="tree">
+    <li class="header">Main Navigation</li>
+    @foreach (SiteMapNodeModel item in Model)
+    {
+        
+        <a href="@item.Url"><li>@item.Title</li></a>
+    }
+</ul>

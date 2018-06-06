@@ -315,3 +315,9 @@ E:\C#WebWorks\WebWork\obj\Debug\WebWork.csproj.CoreCompileInputs.cache
 E:\C#WebWorks\WebWork\obj\Debug\WebWork.csproj.CopyComplete
 E:\C#WebWorks\WebWork\obj\Debug\WebWork.dll
 E:\C#WebWorks\WebWork\obj\Debug\WebWork.pdb
+C:\Users\user\Source\Repos\WebWorks\WebWork\bin\MvcSiteMapProvider.dll
+C:\Users\user\Source\Repos\WebWorks\WebWork\bin\MvcSiteMapProvider.WebActivator.dll
+C:\Users\user\Source\Repos\WebWorks\WebWork\bin\WebActivatorEx.dll
+C:\Users\user\Source\Repos\WebWorks\WebWork\bin\Microsoft.Web.Administration.dll
+C:\Users\user\Source\Repos\WebWorks\WebWork\bin\MvcSiteMapProvider.xml
+C:\Users\user\Source\Repos\WebWorks\WebWork\bin\MvcSiteMapProvider.WebActivator.xml

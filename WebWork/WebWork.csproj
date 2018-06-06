@@ -170,9 +170,6 @@
   <ItemGroup>
     <Content Include="App_Data\FarmTransData.xml" />
     <Content Include="App_Data\OpenData.mdf" />
-    <Content Include="App_Data\OpenData_log.ldf">
-      <DependentUpon>OpenData.mdf</DependentUpon>
-    </Content>
     <Content Include="Content\AdminLTE-3.0.0-alpha\AdminLTE-3.0.0-alpha\.gitignore" />
     <Content Include="Content\AdminLTE-3.0.0-alpha\AdminLTE-3.0.0-alpha\build\js\AdminLTE.js" />
     <Content Include="Content\AdminLTE-3.0.0-alpha\AdminLTE-3.0.0-alpha\build\js\ControlSidebar.js" />
@@ -1165,7 +1162,9 @@
     <Content Include="Content\AdminLTE-3.0.0-alpha\AdminLTE-3.0.0-alpha\pages\plugins\popper\umd\popper.js.map" />
     <Content Include="Content\AdminLTE-3.0.0-alpha\AdminLTE-3.0.0-alpha\pages\plugins\popper\umd\popper.min.js.map" />
     <Content Include="Content\AdminLTE-3.0.0-alpha\AdminLTE-3.0.0-alpha\README.md" />
-    <Content Include="Mvc.sitemap" />
+    <Content Include="Mvc.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="MvcSiteMapSchema.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -1207,6 +1206,10 @@
     <Content Include="Views\Shared\DisplayTemplates\MetaRobotsHelperModel.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\MenuHelperModel.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\CanonicalHelperModel.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\MyMenu.cshtml" />
+    <Content Include="Views\Shared\_UserPanel.cshtml" />
+    <Content Include="Views\Shared\_Menu.cshtml" />
+    <Content Include="Views\Shared\_MyMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
