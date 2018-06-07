@@ -9,8 +9,7 @@ namespace WebWork.Controllers
 
         public ActionResult Index()
         {
-            //return View();
-            return Redirect("/FarmTran");
+            return View();
         }
 
         public ActionResult About()

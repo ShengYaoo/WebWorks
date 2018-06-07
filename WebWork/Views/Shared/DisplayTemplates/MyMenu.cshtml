@@ -2,11 +2,48 @@
 @using System.Web.Mvc.Html
 @using MvcSiteMapProvider.Web.Html.Models
 
-<ul  data-widget="tree">
-    <li class="header">Main Navigation</li>
-    @foreach (SiteMapNodeModel item in Model)
+<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+    
+    @foreach (SiteMapNodeModel item in Model.Skip(1))
     {
-        
-        <a href="@item.Url"><li>@item.Title</li></a>
+        if (!item.Children.Any()) 
+        {
+        <li class="nav-item">
+            <a href="@item.Url" class="nav-link">
+                <i class="nav-icon fa fa-th"></i>
+                <span>@item.Title</span>
+            </a>
+        </li>
+        }
+        else
+        {
+            <li class="nav-item has-treeview menu-open">
+                <a href="#" class="nav-link active">
+                    <i class="nav-icon fa fa-dashboard"></i>
+                    <span>
+                        @item.Title 
+                        <i class="right fa fa-angle-left"></i>
+                    </span>
+                </a>
+
+                <ul class="nav nav-treeview">
+                    @foreach (var childItem in item.Children)
+                    {
+                    <li class="nav-item">
+                        <a href="@childItem.Url" class="nav-link">
+                            <i class="fa fa-circle-o nav-icon"></i>
+                            <p>@childItem.Title</p>
+                        </a>
+                    </li>
+                    }
+                    
+
+                </ul>
+            </li>
+            
+        }
+
+
     }
+    
 </ul>

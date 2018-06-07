@@ -4,10 +4,17 @@
             xsi:schemaLocation="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0 MvcSiteMapSchema.xsd">
 
   <mvcSiteMapNode title="Root" clickable="false">
-    <mvcSiteMapNode title="Home" controller="Home" action="Index"/>
-    <mvcSiteMapNode title="About" controller="Home" action="About"/>
-    <mvcSiteMapNode title="OpenData" controller="Home" action="Index"/>
+    
+    <mvcSiteMapNode title="HomeController" clickable="false">
+      <mvcSiteMapNode title="Index" controller="Home" action="Index"/>
+      <mvcSiteMapNode title="Contact" controller="Home" action="Contact"/>
+    </mvcSiteMapNode>
 
+    <mvcSiteMapNode title="FarmTranController" clickable="false">
+      <mvcSiteMapNode title="Index" controller="FarmTran" action="Index"/>
+      <mvcSiteMapNode title="About" controller="FarmTran" action="About"/>
+    </mvcSiteMapNode>
+    
   </mvcSiteMapNode>
 
 </mvcSiteMap>
